@@ -1,39 +1,7 @@
 <div class="panel panel-default">
     <div class="panel-heading text-center product-header">Edit Product</div>
     <div class="panel-body">
-        <form *ngIf="product$ | async as product" class="form-horizontal" (ngSubmit)="onSubmit(productForm)" #productForm="ngForm">
-            <input type="hidden" name="id" [ngModel]="product.id" />
-            <div class="row">
-                <div class="col-sm-6 p-4">
-                    <div class="form-group">
-                        <label class="form-label" for="pwd">Name</label>
-                        <input type="text" class="form-control" id="pwd" [ngModel]="product.name" name="name" required>
-                    </div>
-                </div>
-                <div class="col-sm-6 p-4">
-                    <div class="form-group">
-                        <label class="form-label" for="pwd">Price</label>
-                        <input type="number" class="form-control" id="pwd" name="price" [ngModel]="product.price" required>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 p-4">
-                    <div class="form-group">
-                        <label class="form-label" for="pwd">Description</label>
-                        <input type="text" class="form-control" id="pwd" name="description" [ngModel]="product.description" required>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 p-4">
-                    <div class="form-group text-right">
-                        <a routerLink="" class="btn btn-danger mr-1">Cancel</a>
-                        <button type="submit" class="btn btn-success" [disabled]="productForm.form.invalid">Save</button>
-                    </div>
-                </div>
-            </div>
-        </form>
+        <app-product-form *ngIf="product$ | async as product" [product]="product" (submit)="onSubmit($event)"></app-product-form>
         <div *ngIf="!(product$ | async)" class="text-center">
             <p>Product Not Found</p>
             <a routerLink="" class="btn btn-info btn-sm">Back</a>

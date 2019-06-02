@@ -29,9 +29,8 @@ export class ProductEditComponent implements OnInit {
         );
   }
 
-  onSubmit(form: NgForm) {
-    const product = form.value;
-    this.productsService.update(product).subscribe(value => console.log(value));
+  onSubmit(product) {
+    this.productsService.update(product);
     this.router.navigate(['products']);
   }
 

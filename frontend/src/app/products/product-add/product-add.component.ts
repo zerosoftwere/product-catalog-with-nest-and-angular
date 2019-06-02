@@ -17,8 +17,8 @@ export class ProductAddComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(product: NgForm) {
-    this.productService.add(product.value);
+  onSubmit(product) {
+    this.productService.add(product);
     this.router.navigate(['']);
   }
 
