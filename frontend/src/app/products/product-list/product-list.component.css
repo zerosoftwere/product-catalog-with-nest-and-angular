@@ -1,0 +1,15 @@
+.product-desc {
+    font-size: .8em;
+}
+
+.product-name {
+    font-size: 1.2em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.badge-success {
+    background-color: #6da279 !important;
+}

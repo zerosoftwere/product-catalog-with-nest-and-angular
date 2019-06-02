@@ -1,0 +1,18 @@
+.mr-1 {
+    margin-right: .4em;
+}
+
+.p-4 {
+    padding: 0 32px;
+}
+
+.product-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #7d5151 !important;
+}
+
+.form-label {
+    font-size: .8em;
+    color: #6d6b6b;
+}
