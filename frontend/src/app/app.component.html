@@ -1,21 +1,19 @@
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" routerLink="">
-                    Product Catalog
-                </a>
-        </div>
-        <div class="navbar-body">
-            <form class="navbar-form navbar-right">
-                <a routerLink="/products/add" class="btn btn-default">Add</a>
-            </form>
-        </div>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Product Catalog</a>
     </div>
+    <div class="navbar-body">
+      <form class="navbar-form navbar-right">
+        <a routerLink="/products/add" class="btn btn-default">Add</a>
+      </form>
+    </div>
+  </div>
 </nav>
 <section class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <router-outlet></router-outlet>
-        </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <router-outlet></router-outlet>
     </div>
+  </div>
 </section>

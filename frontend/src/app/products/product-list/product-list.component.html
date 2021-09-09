@@ -1,9 +1,9 @@
 <div class="panel panel-default">
-    <div class="panel-heading text-center product-header">Product List</div>
-    <ul class="list-group">
-        <li class="list-group-item" *ngFor="let product of products$ | async">
-            <a class="text-warning" routerLink="edit/{{product.id}}"><span class="product-name">{{product.name}}</span> - <span class="product-desc text-muted">{{product.description}}</span></a>
-            <span class="badge badge-success">{{product.price}}</span>
-        </li>
-    </ul>
+  <div class="panel-heading text-center product-header">Product List</div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let product of products$ | async">
+      <a class="text-warning" routerLink="edit/{{product.id}}"><span class="product-name">{{product.name}}</span> - <span class="product-desc text-muted">{{product.description}}</span></a>
+      <span class="badge badge-success">{{product.price}}</span>
+    </li>
+  </ul>
 </div>
