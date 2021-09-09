@@ -7,6 +7,7 @@ import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { FormsModule } from '@angular/forms';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { ElementModule } from '../element/element.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProductAddComponent } from './product-add/product-add.component';
     CommonModule,
     FormsModule,
     ProductRoutingModule,
+    ElementModule
   ],
   providers: [ProductsService]
 })

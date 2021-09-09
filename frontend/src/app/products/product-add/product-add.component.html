@@ -1,6 +1,3 @@
-<div class="panel panel-default">
-    <div class="panel-heading text-center product-header">Add Product</div>
-    <div class="panel-body">
-        <app-product-form (submit)="onSubmit($event)"></app-product-form>
-    </div>
-</div>
+<app-panel title="Add Product">
+  <app-product-form (submit)="onSubmit($event)"></app-product-form>
+</app-panel>
